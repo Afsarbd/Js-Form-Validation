@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Javascript form validation</title>
+     <section class="form-wrapper">
+          <div class="container">
+               <div class="row">
+                    <form class="form-horizontal frm_validate" name="frm" action="#" onsubmit="return validate()">
+                        <fieldset>
+                            <legend>Form Validation</legend>
+                            <div class="form-group">
+                               <label for="inputName" class="col-lg-3 control-label">Username<span class="star">  *</span></label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="inputName" placeholder="Name" type="text" name="username">
+                                    <p class="text" id="uname"></p>
+                                    <p class="alrt" id="ualert"></p>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                               <label for="inputPassword" class="col-lg-3 control-label">Password<span class="star">  *</span></label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="inputPassword" placeholder="....." type="password" name="password">
+                                    <p class="text" id="psd"></p>
+                                    <p class="alrt" id="palert"></p>
+                               </div>
+                            </div>
+
+                            <div class="form-group">
+                               <label for="confirmPassword" class="col-lg-3 control-label">Confirm Password<span class="star">  *</span></label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="confirmPassword" placeholder="....." type="password" name="confirmPassword">
+                                    <p class="text" id="cpsd"></p>
+                                    <p class="alrt" id="cpalert"></p>
+                                    <p id="psdAlert"></p>
+                               </div>
+                            </div>
+
+                            <div class="form-group">
+                               <label for="firstName" class="col-lg-3 control-label">First Name<span class="star">  *</span></label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="firstName" placeholder="First Name" type="text" name="firstName">
+                                    <p class="text" id="fname"></p>
+                                    <p class="alrt" id="fnalert"></p>
+                               </div>
+                            </div>
+
+                            <div class="form-group">
+                               <label for="lastName" class="col-lg-3 control-label">Last Name</label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="lastName" placeholder="Last Name" type="text">
+                               </div>
+                            </div>
+
+                            <div class="form-group">
+                               <label for="inputEmail" class="col-lg-3 control-label">Email<span class="star">  *</span></label>
+                               <div class="col-lg-9">
+                                    <input class="form-control" id="email" placeholder="Email" type="email" name="email">
+                                    <p class="text" id="result"></p>
+                               </div>
+                            </div>
+                                  <div class="form-group">
+                               <div class="col-lg-9 col-lg-offset-3">
+                                    <p><span class="star">*</span>Required field</p>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                               <div class="col-lg-9 col-lg-offset-3">
+                                    <button type="submit" class="btn btn-primary"  id=''>Submit</button>
+                               </div>
+                            </div>
+                        </fieldset>
+                    </form>
+               </div>
+          </div>
+     </section>
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+</body>
+</html>
